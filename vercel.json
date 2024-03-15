@@ -1,15 +1,16 @@
 {
-  "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "./dist/app.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
+      "source": "/users/(.*)",
+      "destination": "/users"
+    },
     {
-      "src": "/(.*)",
-      "dest": "/dist/app.js"
+      "source": "/login",
+      "destination": "/login"
+    },
+    {
+      "source": "/register",
+      "destination": "/register"
     }
   ]
 }
