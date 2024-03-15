@@ -61,7 +61,7 @@ export const findByEmail = async (userEmail: string): Promise<UnitUser | undefin
 
 export const comparePassword = async (email: string, suppliedPassword: string): Promise<UnitUser | undefined> => {
   const user = await findByEmail(email)
-  const decryptPassword = await bcrypt.compare(suppliedPassword, user?.password)
+  const decryptPassword = await bcrypt.compare(suppliedPassword, user!.password)
 
   if (!decryptPassword) {
     return

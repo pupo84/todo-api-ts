@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node-dev --pretty --respawn ./src/app.ts"
+    "dev": "ts-node-dev --pretty --respawn ./src/app.ts",
+    "start": "node dist/app.js"
   },
   "keywords": [],
   "author": "",

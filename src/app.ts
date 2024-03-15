@@ -10,7 +10,7 @@ if (!process.env.PORT) {
   console.log("No port value specified!")
 }
 
-const PORT = parseInt(process.env.PORT as string, 10)
+const PORT = parseInt(process.env.PORT || "9000" as string, 10)
 const app = express()
 
 app.use(express.json())
