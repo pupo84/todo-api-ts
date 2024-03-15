@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "build"
+      "use": "vercel-build"
     },
     {
       "src": "./dist/app.js",
