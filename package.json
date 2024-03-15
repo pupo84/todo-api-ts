@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --pretty --respawn ./src/app.ts",
-    "start": "node /dist/app.js",
+    "start": "node ./dist/app.js",
     "build": "tsc"
   },
   "engines": {
